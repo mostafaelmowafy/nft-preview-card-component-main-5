@@ -1,0 +1,145 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    background-color: hsl(217, 54%, 11%);
+}
+.container {
+    padding-inline: 20px;
+}
+@media (min-width:375px) {
+    .container {
+    margin: 0px auto;
+    }
+}
+/* End Global Rules */
+.attribution {color: white; font-size: 11px; text-align: left;position: absolute;bottom: -100px; left: 15px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+.root{
+    width: 356px;
+    height: 590px;
+    left: 50%;
+    margin-block-start: 120px;
+    position: absolute;
+    transform: translate(-50%);
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 0px 0px 15px hsl(216, 57%, 12%), 0px 0px 5px 30px hsla(216, 48%, 13%, 0.733);
+}
+/* main .top{
+    height: 300px;
+    width: 316px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: cover;
+    cursor: pointer; 
+    position: relative;
+} */
+.top{
+    height: 300px;
+    width: 316px;
+    margin-block-start: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+main .top .nft {
+    height: 300px;
+    width: 316px;
+    border-radius: 15px;
+    cursor: pointer; 
+    position: relative;
+}
+main .top .eye{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    transform: translate(-50% 50%);
+    opacity: 0;
+}
+.nft:hover{
+    opacity: .5;
+}
+.nft:hover + .eye{
+    opacity: 1;
+} 
+
+.content{
+    margin-block-start:20px ;
+}
+.content p{
+    font-size: 18px;
+    color: #839fc7;
+    font-weight: 10;
+    line-height: 1.6;
+}
+.content h1{
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+.container h1:hover {
+    color: #15c1c3;
+}
+.bottom {
+    display: flex;
+    margin-block-start: 20px;
+}
+.bottom .left{
+    flex: 1;
+    color: #15c1c3;
+    margin-inline-start: 20px;
+}
+.bottom .left::before{
+    content: "";
+    position: absolute;
+    width:11px ;
+    height: 18px;
+    background-image: url(../images/icon-ethereum.svg);
+    left: 20px;
+}
+
+.bottom .right{
+    color: #839fc7;
+}
+.bottom .right::before{
+    content: "";
+    position: absolute;
+    width:17px ;
+    height: 17px;
+    background-image: url(../images/icon-clock.svg);
+    left: 240px;
+}
+hr{
+    margin-block-start: 20px;
+    border-block-start:0px ;
+    border-color: hsl(215, 32%, 27%);
+}
+footer{
+    display: flex;
+    position: relative;
+}
+footer p{
+    color: #839fc7;
+}
+footer p span {
+    color: white;
+}
+footer p span:hover{
+    color: #15c1c3;
+    cursor: pointer;
+}
+footer img{
+    width: 36px;
+    height: 36px;
+    margin: 8px 10px 0 0;
+    border: 1px solid white ;
+    border-radius: 50%;
+}
